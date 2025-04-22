@@ -7,5 +7,6 @@ model.set_classes(names, model.get_text_pe(names))
 model.predict(
     'path/to/text_prompt.mp4',   # Replace with the path to your video of choice
     show=True,
-    save=True
+    save=True,
+    show_conf=True
 )

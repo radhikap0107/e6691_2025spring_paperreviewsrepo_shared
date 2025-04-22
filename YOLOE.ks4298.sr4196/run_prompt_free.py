@@ -7,7 +7,7 @@ model = YOLOE("yoloe-11l-seg-pf.pt")
 results= model.predict(
     "path/to/prompt_free.mp4",  # Here, replace this with path to video of your choice
     show=True,
-    save=False, # can save if wanted   
+    save=True, # can save if wanted else set false  
     show_conf=False
 )
 for r in results:
